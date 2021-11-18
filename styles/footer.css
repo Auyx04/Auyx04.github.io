@@ -1,0 +1,173 @@
+.footer-container {
+    position: relative;
+    bottom: 0;
+    background-color: #333;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+  
+    padding: 55px 50px;
+    margin-top: 120px;
+  }
+  
+  .footer-container .footer-left,
+  .footer-container .footer-center,
+  .footer-container .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  
+  /* Footer left */
+  
+  .footer-container .footer-left {
+    width: 35%;
+  }
+  
+  /* The company logo */
+  
+  .footer-container h3 {
+    color: #ffffff;
+    font: normal 36px "Cookie", cursive;
+    margin: 0;
+  }
+  
+  .footer-container h3 span {
+    color: #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-container .footer-links {
+    color: #fff;
+    margin-top: 15px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+  
+  .footer-container .footer-links a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-container .footer-company-name {
+    color: #1b1b1b;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  
+  /* Footer Center */
+  
+  .footer-container .footer-center {
+    padding-left: 20px;
+    width: 35%;
+  }
+  
+
+  
+  .footer-container .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .footer-container .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 2;
+  }
+  .footer-container .footer-center p {
+    font-weight: normal;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .footer-container .footer-center p a {
+    color: #00938a;
+    text-decoration: none;
+  }
+  .footer-container .footer-center p a:hover {
+    color:#ffc300
+  }
+  
+  /* Footer Right */
+  
+  .footer-container .footer-right {
+    padding-left: 20px;
+    width: 20%;
+  }
+  
+  .footer-container .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-container .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-container .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-container .footer-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #00938a;
+    border-radius: 2px;
+  
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  .footer-container .footer-icons a:hover {
+      background-color:#ffc300
+}
+
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+    .footer-container {
+      font: bold 18px sans-serif;
+    }
+  
+    .footer-container .footer-left,
+    .footer-container .footer-center,
+    .footer-container .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-container .footer-center i {
+      margin-left: 0;
+    }
+  }
+  

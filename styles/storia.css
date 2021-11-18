@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/geometos");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff9900;
+}
+
+.chef-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px auto;
+}
+
+.chef-section img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 240px;
+  height: 240px;
+}
+
+.chef-text {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.section-title {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #ff9900;
+  font-family: Lato;
+}
+
+.chef-section p {
+  color: #1b1b1b;
+  font-family: Lato;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .chef-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  .chef-text {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.hero {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+          clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  width: 100%;
+  margin-top: -5px;
+  z-index: -20;
+  background: #1f1f1f;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.hero-ani {
+  -webkit-animation: heroo linear 1s forwards;
+          animation: heroo linear 1s forwards;
+}
+
+@-webkit-keyframes heroo {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  }
+}
+
+@keyframes heroo {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+  }
+}
+
+.hero h1 {
+  color: #ffc300;
+  font-family: "Lato";
+  font-size: 35px;
+  text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.hero-flex {
+  margin: 50px auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero-image {
+  border: 8px solid white;
+  margin-top: 10px;
+  height: calc(165px + 3vw);
+  width: calc(320px + 3vw);
+}
+
+.hero-paragraph {
+  line-height: 1.5;
+  width: 40%;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 22px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .hero-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-image {
+    margin-left: 0px;
+  }
+  .hero-paragraph {
+    text-align: center;
+    width: 80%;
+  }
+  .flex-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=storia.css.map */

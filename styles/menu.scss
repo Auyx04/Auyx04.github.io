@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/geometos');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: #333;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background: #ff9900;
+    }
+
+
+    //carousel
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+
+
+//hero-animatio
+
+    .hero {
+      clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+      width: 100%;
+      margin-top: -5px;
+      z-index:-20;
+      background:rgb(43, 43, 43);
+      transition: 2s;
+      height: 40vh;
+    }
+    .hero-ani {
+      animation: heroo linear 1s forwards;
+    }
+    @keyframes heroo { 
+      from { clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);}
+      to { clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);}
+    }
+    .hero h1 {
+      color: #ffc300;
+      font-family: "Lato";
+      font-size: 40px;
+      text-align: center;
+      padding-top: 20px;
+      text-transform: uppercase;
+    }
+    .hero-flex  {
+
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      display: flex;
+      justify-content: space-around
+    }
+    .hero .menu-button {
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 1s;
+      background: #00938a;
+      margin-top: 35px;
+      padding: 11px;
+      font-size: 25px;
+      border-radius: 5px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri
+    }
+    .hero .menu-button:hover {
+      padding: 12px;
+      background-color: #ff9900;
+    }
+
+    .hero-paragraph {
+      line-height: 1.5;
+      width: 80%;
+      color: #fff;
+      font-family: "Lato";
+      font-size: 24px;
+      text-align: left;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+    }
+    @media (max-width:800px) {
+      .hero {
+        height: 70vh;
+      }
+      .hero-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-image {
+        margin-left: 0px;
+      }
+      .hero-paragraph {
+        text-align: center;
+        width: 80%
+      }
+    }
+
+      //food section
+
+      .food-section {
+          position: relative;
+          width: 100%;
+          height: 50vh;
+          display: flex;
+          justify-content: space-around;
+      }
+      @media (max-width:900px){
+        .food-section { 
+          height: auto;
+        display: flex;
+        flex-direction: column;
+        }
+      }
+      .dish {
+          width: 100%;
+          height: 100%;
+          margin-bottom: 40px;
+      }
+      .food-image {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: auto;
+        margin-right:auto;
+      height: calc(90px + 8vw);
+      width: calc(220px + 8vw);
+      border: 0px;
+      transition: 1s;
+      border-radius: 10px;
+    }
+
+
+      .food-section-title {
+          text-align: center;
+          font-size: 35px;
+          text-transform: capitalize;
+          color: #00938a;
+          font-family: 'Lato', sans-serif;
+      }
+      .food-section-desc {
+          margin: auto;
+        text-align: center;
+        font-size: 17px;
+        margin-top: 5px;
+        font-family: 'Montserrat', sans-serif;
+        width: 85%;
+        color: #333;
+    }
+
+.linea {
+
+display: none;
+}
+    

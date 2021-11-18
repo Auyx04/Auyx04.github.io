@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/geometos');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    body::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: #333;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background: #ff9900;
+    }
+
+//chef
+    .chef-section {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        margin: 30px auto;
+    }
+
+    .chef-section img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 240px;
+        height: 240px;
+    }
+    .chef-text {
+        margin-top: 50px;
+        width: 50%;
+    }
+    .section-title {
+      font-size: 35px;
+      margin-bottom: 10px;
+        color: #ff9900;
+        font-family: Lato;
+    }
+    .chef-section p {
+        color: rgb(27, 27, 27);
+        font-family: Lato;
+        font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+        .chef-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+        }
+        .chef-text {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            text-align: center;
+        }
+    }
+
+
+//hero-animatio
+
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  width: 100%;
+  margin-top: -5px;
+  z-index:-20;
+  background:rgb(31, 31, 31);
+  transition: 2s;
+}
+.hero-ani {
+  animation: heroo linear 1s forwards;
+}
+@keyframes heroo { 
+  from { clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);}
+  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);}
+}
+.hero h1 {
+  color: #ffc300;
+  font-family: "Lato";
+  font-size: 35px;
+  text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.hero-flex {
+  margin: 50px auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.hero-image {
+  border: 8px solid white;
+  margin-top: 10px;
+  height: calc(165px + 3vw);
+  width: calc(320px + 3vw);    
+}
+
+.hero-paragraph {
+  line-height: 1.5;
+  width: 40%;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 22px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width:800px) {
+  .hero-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image {
+    margin-left: 0px;
+  }
+  .hero-paragraph {
+    text-align: center;
+    width: 80%
+  }
+  .flex-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
